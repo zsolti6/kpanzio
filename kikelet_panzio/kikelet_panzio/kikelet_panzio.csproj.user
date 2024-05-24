@@ -12,6 +12,9 @@
     <Compile Update="Szobak.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Ugyfelek.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Kezdooldal.xaml">
@@ -21,6 +24,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Szobak.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ugyfelek.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

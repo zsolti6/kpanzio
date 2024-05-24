@@ -73,3 +73,5 @@ C:\Users\gzsolt\Source\Repos\kpanzio\kikelet_panzio\kikelet_panzio\obj\Debug\net
 C:\Users\gzsolt\Source\Repos\kpanzio\kikelet_panzio\kikelet_panzio\obj\Debug\net7.0-windows\kikelet_panzio.pdb
 C:\Users\gzsolt\Source\Repos\kpanzio\kikelet_panzio\kikelet_panzio\obj\Debug\net7.0-windows\kikelet_panzio.genruntimeconfig.cache
 C:\Users\gzsolt\Source\Repos\kpanzio\kikelet_panzio\kikelet_panzio\obj\Debug\net7.0-windows\ref\kikelet_panzio.dll
+C:\Users\gzsolt\Source\Repos\kpanzio\kikelet_panzio\kikelet_panzio\obj\Debug\net7.0-windows\Ugyfelek.g.cs
+C:\Users\gzsolt\Source\Repos\kpanzio\kikelet_panzio\kikelet_panzio\obj\Debug\net7.0-windows\Ugyfelek.baml

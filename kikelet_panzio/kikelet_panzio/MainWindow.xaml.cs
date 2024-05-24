@@ -95,7 +95,8 @@ namespace kikelet_panzio
         }
         private void adminUgyfel_Click(object sender, RoutedEventArgs e)
         {
-
+            ablak.NavigationService.Navigate(new Ugyfelek());
+            ablak.NavigationService.RemoveBackEntry();
         }
 
         private void adminFoglalas_Click(object sender, RoutedEventArgs e)
