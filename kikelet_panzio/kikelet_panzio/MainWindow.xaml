@@ -38,13 +38,10 @@
             <Button Name="adminStatisztika" Click="adminStatisztika_Click">
                 <Image Source="statisztika.png" Height="70"/>
             </Button>
-            <Button Name="tema" Click="tema_Click">
-                <Image Source="tema.png" Height="50" Margin="0,-10,0,0"/>
-            </Button>
             <Button Name="kilep" Click="kilep_Click">
                 <Image Source="kilep.png" Height="60"/>
             </Button>
         </StackPanel>
-        <Frame Name="ablak" Grid.Column="1"/>
+        <Frame Name="ablak" Grid.Column="1" ContentRendered="ablak_ContentRendered"/>
     </Grid>
 </Window>

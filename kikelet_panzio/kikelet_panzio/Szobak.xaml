@@ -6,9 +6,16 @@
       xmlns:local="clr-namespace:kikelet_panzio"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Szobak">
-
+      Title="Szobak" Background="White">
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Width" Value="200"/>
+        </Style>
+    </Page.Resources>
     <StackPanel>
-        
+        <ListBox Name="szobaId"/>
+        <TextBox Name="ferohely"/>
+        <TextBox Name="ar"/>
     </StackPanel>
 </Page>

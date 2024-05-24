@@ -13,7 +13,6 @@
     <None Remove="kilep.png" />
     <None Remove="statisztika.png" />
     <None Remove="szoba.png" />
-    <None Remove="tema.png" />
     <None Remove="ugyfel.png" />
   </ItemGroup>
 
@@ -23,7 +22,6 @@
     <Resource Include="kilep.png" />
     <Resource Include="statisztika.png" />
     <Resource Include="szoba.png" />
-    <Resource Include="tema.png" />
     <Resource Include="ugyfel.png" />
   </ItemGroup>
 

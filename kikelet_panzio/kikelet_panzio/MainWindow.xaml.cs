@@ -21,12 +21,10 @@ namespace kikelet_panzio
         internal static List<Szoba> szobak = new List<Szoba>();
         internal static List<Ugyfel> ugyfelek = new List<Ugyfel>();
         internal static List<Foglalas> foglalasok = new List<Foglalas>();
-        bool sotetTema;
         public MainWindow()
         {
             InitializeComponent();
-            //ablak.NavigationService.Navigate(new Kezdooldal());
-            temaBeallit();
+            //ablak.NavigationService.Navigate(kezdoo);
             Beolvas();
         }
         public static DateOnly Datumba(string datum)
@@ -68,13 +66,19 @@ namespace kikelet_panzio
             BeolvasUgyfelek();
             BeolvasFoglalasok();
         }
+        private void ablak_ContentRendered(object sender, EventArgs e)
+        {
+            ablak.NavigationUIVisibility = System.Windows.Navigation.NavigationUIVisibility.Hidden;
+        }
         private void kezdooldal_Click(object sender, RoutedEventArgs e)
         {
             ablak.NavigationService.Navigate(new Kezdooldal());
+            ablak.NavigationService.RemoveBackEntry();
         }
         private void adminSzoba_Click(object sender, RoutedEventArgs e)
         {
-
+            ablak.NavigationService.Navigate(new Szobak());
+            ablak.NavigationService.RemoveBackEntry();
         }
         private void adminUgyfel_Click(object sender, RoutedEventArgs e)
         {
@@ -89,21 +93,9 @@ namespace kikelet_panzio
         {
 
         }
-        private void tema_Click(object sender, RoutedEventArgs e)
-        {
-            sotetTema = !sotetTema;
-            File.WriteAllText("tema.txt", sotetTema ? "1" : "0");
-            temaBeallit();
-        }
         private void kilep_Click(object sender, RoutedEventArgs e)
         {
             Close();
-        }
-        private void temaBeallit()
-        {
-            sotetTema = File.ReadAllLines("tema.txt")[0] == "1";
-            ablak.Background = sotetTema ? Brushes.Black : Brushes.White;
-            //ablak.NavigationService.CurrentSource. = !sotetTema ? Brushes.Black : Brushes.White;
         }
     }
 }
