@@ -5,17 +5,35 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:kikelet_panzio"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Szobak" Background="White">
+      d:DesignHeight="1080" d:DesignWidth="1820"
+      Title="Szobak" Background="LightGray">
     <Page.Resources>
         <Style TargetType="TextBox">
-            <Setter Property="Width" Value="200"/>
-            <Setter Property="Width" Value="200"/>
+            <Setter Property="Width" Value="400"/>
+            <Setter Property="Height" Value="80"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="45"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="40"/>
         </Style>
     </Page.Resources>
     <StackPanel>
-        <ListBox Name="szobaId"/>
-        <TextBox Name="ferohely"/>
-        <TextBox Name="ar"/>
+        <Label Content="A szobák adatainak módosítása" FontSize="70" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+        <DockPanel Margin="0,180,0,0">
+            <Label Content="A szoba azonosítója (2, 3, 4):" Margin="300,0,0,0"/>
+            <ComboBox Name="szobaId" Width="400" Height="60" Margin="22,0,0,0" HorizontalAlignment="Left" SelectedIndex="0" Cursor="Hand" SelectionChanged="szobaId_SelectionChanged" FontSize="30"/>
+        </DockPanel>
+        <DockPanel Margin="0,20,0,0">
+            <Label Content="A férőhelyek száma:" Margin="450,0,0,0"/>
+            <TextBox Name="ferohely" Margin="21,0,0,0"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Margin="350,0,0,0" FontSize="40" TextWrapping="Wrap" Width="466">Az aktuális ár egy főre egy éjszakára (6000-12000 Ft):</TextBlock>
+            <TextBox Name="ar" Margin="15,0,0,0"/>
+        </DockPanel>
+        <Button Name="valtoztat" Content="Változtatás" Width="250" Height="80" FontSize="40" Margin="-150,60,0,0" Click="valtoztat_Click"/>
     </StackPanel>
 </Page>

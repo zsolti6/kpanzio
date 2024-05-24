@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gzsolt\\Desktop\\kikelet_panzio\\kikelet_panzio\\kikelet_panzio.csproj",
+      "projectUniqueName": "C:\\Users\\gzsolt\\Source\\Repos\\kpanzio\\kikelet_panzio\\kikelet_panzio\\kikelet_panzio.csproj",
       "projectName": "kikelet_panzio",
-      "projectPath": "C:\\Users\\gzsolt\\Desktop\\kikelet_panzio\\kikelet_panzio\\kikelet_panzio.csproj",
+      "projectPath": "C:\\Users\\gzsolt\\Source\\Repos\\kpanzio\\kikelet_panzio\\kikelet_panzio\\kikelet_panzio.csproj",
       "packagesPath": "C:\\Users\\gzsolt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gzsolt\\Desktop\\kikelet_panzio\\kikelet_panzio\\obj\\",
+      "outputPath": "C:\\Users\\gzsolt\\Source\\Repos\\kpanzio\\kikelet_panzio\\kikelet_panzio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

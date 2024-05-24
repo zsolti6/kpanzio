@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Threading.Tasks.Dataflow;
 
 namespace kikelet_panzio
 {
@@ -24,12 +25,12 @@ namespace kikelet_panzio
         public MainWindow()
         {
             InitializeComponent();
-            //ablak.NavigationService.Navigate(kezdoo);
+            ablak.NavigationService.Navigate(new Kezdooldal());
             Beolvas();
         }
         public static DateOnly Datumba(string datum)
         {
-            int[] datumS = datum.Split('-').Select(x => Convert.ToInt32(x)).ToArray();
+            int[] datumS = datum.Replace(".", "").Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
             return new DateOnly(datumS[0], datumS[1], datumS[2]);
         }
         public static string Datumbol(DateOnly datum)
@@ -59,6 +60,18 @@ namespace kikelet_panzio
             {
                 foglalasok.Add(new Foglalas(sor));
             }
+        }
+        public static void KiirSzobak()
+        {
+            File.WriteAllLines("szobak.txt", szobak.Select(x => $"{x.Szobaszam};{x.Ferohely};{x.Arperfo}"));
+        }
+        public static void KiirUgyfelek()
+        {
+            File.WriteAllLines("ugyfelek.txt", ugyfelek.Select(x => $"{x.Azon};{x.Nev};{x.SzulDatum};{x.Email};{x.Vip}"));
+        }
+        public static void KiirFoglalasok()
+        {
+            File.WriteAllLines("foglalasok.txt", foglalasok.Select(x => $"{x.Szobaszam};{x.UgyfelAzon};{x.Erkezes};{x.Tavozas};{x.Fo};{x.Ar};{x.Allapot}"));
         }
         public void Beolvas()
         {

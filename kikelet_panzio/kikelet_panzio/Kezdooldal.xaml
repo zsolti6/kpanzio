@@ -5,10 +5,11 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:kikelet_panzio"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Kezdooldal">
+      d:DesignHeight="1080" d:DesignWidth="1820"
+      Title="Kezdooldal" Background="LightGray">
 
     <StackPanel>
-        <Label Foreground="Red" FontSize="35" HorizontalAlignment="Center" Content="Ez a Kikelet Panzió adminisztrációs programja"/>
+        <Label Foreground="Black" FontFamily="Candara"  FontSize="35" HorizontalAlignment="Center" Content="Ez a Kikelet Panzió adminisztrációs programja"/>
+        <Image Source="hatter.jpg"/>
     </StackPanel>
 </Page>

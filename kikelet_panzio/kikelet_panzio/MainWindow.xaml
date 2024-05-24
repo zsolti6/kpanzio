@@ -23,22 +23,22 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Background="DarkGray">
-            <Button Name="kezdooldal" Click="kezdooldal_Click">
+            <Button Name="kezdooldal" Click="kezdooldal_Click" ToolTip="Kezdőoldal">
                 <Image Source="kezdooldal.png" Height="65"/>
             </Button>
-            <Button Name="adminSzoba" Click="adminSzoba_Click">
+            <Button Name="adminSzoba" Click="adminSzoba_Click" ToolTip="Szobák">
                 <Image Source="szoba.png" Height="65"/>
             </Button>
-            <Button Name="adminUgyfel" Click="adminUgyfel_Click">
+            <Button Name="adminUgyfel" Click="adminUgyfel_Click" ToolTip="Ügyfelek">
                 <Image Source="ugyfel.png"/>
             </Button>
-            <Button Name="adminFoglalas" Click="adminFoglalas_Click">
+            <Button Name="adminFoglalas" Click="adminFoglalas_Click" ToolTip="Foglalás">
                 <Image Source="foglalas.png"/>
             </Button>
-            <Button Name="adminStatisztika" Click="adminStatisztika_Click">
+            <Button Name="adminStatisztika" Click="adminStatisztika_Click" ToolTip="Statisztika">
                 <Image Source="statisztika.png" Height="70"/>
             </Button>
-            <Button Name="kilep" Click="kilep_Click">
+            <Button Name="kilep" Click="kilep_Click" ToolTip="Kilépés">
                 <Image Source="kilep.png" Height="60"/>
             </Button>
         </StackPanel>

@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="foglalas.png" />
+    <None Remove="hatter.jpg" />
     <None Remove="kezdooldal.png" />
     <None Remove="kilep.png" />
     <None Remove="statisztika.png" />
@@ -18,6 +19,7 @@
 
   <ItemGroup>
     <Resource Include="foglalas.png" />
+    <Resource Include="hatter.jpg" />
     <Resource Include="kezdooldal.png" />
     <Resource Include="kilep.png" />
     <Resource Include="statisztika.png" />

@@ -15,7 +15,7 @@ namespace kikelet_panzio
         int arperfo;
         public int Szobaszam { get => szobaszam; }
         public int Ferohely { get => ferohely; set => ferohely = value; }
-        public int Arperfo { get => arperfo; set => Arperfo = value; }
+        public int Arperfo { get => arperfo; set => arperfo = value; }
         public Szoba(int szobaszam, int ferohely, int arperfo)
         {
             this.szobaszam = szobaszam;
