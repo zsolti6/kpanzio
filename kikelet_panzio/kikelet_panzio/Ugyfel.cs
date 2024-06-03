@@ -34,7 +34,7 @@ namespace kikelet_panzio
             nev = adatok[1];
             szulDatum = MainWindow.Datumba(adatok[2]);
             email = adatok[3];
-            vip = adatok[4] == "true";
+            vip = adatok[4] == "True";
         }
     }
 }

@@ -90,7 +90,7 @@ namespace kikelet_panzio
                 return;
             }
             bool kedvezmenyes = MainWindow.ugyfelek.Where(x => x.Azon == ugyfelId.SelectedItem.ToString()).First().Vip;
-            MessageBox.Show(MainWindow.ugyfelek.Where(x => x.Azon == ugyfelId.SelectedItem.ToString()).Count().ToString());
+            MessageBox.Show(string.Join("\n", MainWindow.ugyfelek.Select(x => x.Vip)));
             ar.Text = kedvezmenyes ? MainWindow.szobak[Convert.ToInt32(szobaId.SelectedItem) - 1].Kedvezmenyes(Convert.ToInt32(fo.Text)).ToString() : MainWindow.szobak[Convert.ToInt32(szobaId.SelectedItem) - 1].Ar(Convert.ToInt32(fo.Text)).ToString();
         }
 
