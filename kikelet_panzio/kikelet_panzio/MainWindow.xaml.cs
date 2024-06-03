@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using System.Threading.Tasks.Dataflow;
+using System.Text.RegularExpressions;
 
 namespace kikelet_panzio
 {
@@ -101,7 +102,8 @@ namespace kikelet_panzio
 
         private void adminFoglalas_Click(object sender, RoutedEventArgs e)
         {
-
+            ablak.NavigationService.Navigate(new Foglalasok());
+            ablak.NavigationService.RemoveBackEntry();
         }
         private void adminStatisztika_Click(object sender, RoutedEventArgs e)
         {
@@ -110,6 +112,10 @@ namespace kikelet_panzio
         private void kilep_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+        public static bool megfeleloEmail(string email)
+        {
+            return Regex.IsMatch(email, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
         }
     }
 }

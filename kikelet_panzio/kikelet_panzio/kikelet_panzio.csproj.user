@@ -6,6 +6,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Foglalasok.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Kezdooldal.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,6 +20,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Foglalasok.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Kezdooldal.xaml">
       <SubType>Designer</SubType>
     </Page>
